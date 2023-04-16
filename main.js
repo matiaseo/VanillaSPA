@@ -1,4 +1,4 @@
-(() => {
+(async () => {
     const productsUrl = 'https://unqctexfi6z2hc4is5sitgbvxy0gmbjz.lambda-url.us-east-2.on.aws/'
     const productsContainer = document.getElementById('productsContainer')
     const productFilter = document.getElementById('productFilter')
@@ -53,7 +53,6 @@
         return response.json()
     }
 
-    fetchProducts()
-        .then(products => renderProducts(appState.products = products))
+    renderProducts(appState.products = await fetchProducts())
     
 })()
