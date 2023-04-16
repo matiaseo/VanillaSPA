@@ -1,0 +1,73 @@
+html, body {
+    --mainFontColor: antiquewhite;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: black;
+    color: var(--mainFontColor);
+    overflow: hidden;
+    font-family: monospace;
+}
+
+ul {
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
+
+.layoutSwitch {
+    display: none;
+}
+
+.layoutSwitchContainer {
+    position: absolute;
+    right: 0;
+}
+.layoutSwitchContainer label {
+    padding: 8px 16px;
+    cursor: pointer;
+    background: black;
+}
+
+#gridLayoutSwitch:checked ~ .layoutSwitchContainer label[for="gridLayoutSwitch"],
+#listLayoutSwitch:checked ~ .layoutSwitchContainer label[for="listLayoutSwitch"] {
+    filter: invert();
+}
+
+#gridLayoutSwitch:checked ~ #productsContainer {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    display: grid;
+    gap: 32px;
+}
+
+#listLayoutSwitch:checked ~ #productsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#listLayoutSwitch:checked ~ #productsContainer li {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#listLayoutSwitch:checked ~ #productsContainer .productDescription {
+    flex-grow: 1;
+    padding: 0 16px;
+}
+
+.price {
+    padding: 0 16px;
+}
+
+.productFilter {
+    background: transparent;
+    border: none;
+    box-shadow: 0 0 4px 1px beige;
+    margin: 0 16px;
+    padding: 8px;
+    color: var(--mainFontColor);
+}
