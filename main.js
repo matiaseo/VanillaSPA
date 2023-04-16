@@ -1,34 +1,10 @@
 (() => {
+    const productsUrl = 'https://unqctexfi6z2hc4is5sitgbvxy0gmbjz.lambda-url.us-east-2.on.aws/'
     const productsContainer = document.getElementById('productsContainer')
     const productFilter = document.getElementById('productFilter')
     
     const appState = {
-        products: [{
-            image: 'https://dummyimage.com/128x64/aa0/000',
-            name: 'Product 1a',
-            description: 'Product description',
-            price: 16384
-        }, {
-            image: 'https://dummyimage.com/128x64/a0a/000',
-            name: 'Product 1b',
-            description: 'Product description',
-            price: 32768
-        }, {
-            image: 'https://dummyimage.com/128x64/a00/000',
-            name: 'Product 2',
-            description: 'Product description',
-            price: 32768
-        }, {
-            image: 'https://dummyimage.com/128x64/0aa/000',
-            name: 'Product 3',
-            description: 'Product description',
-            price: 65536
-        }, {
-            image: 'https://dummyimage.com/128x64/0a0/000',
-            name: 'Product 4',
-            description: 'Product description',
-            price: 65536
-        }],
+        products: [],
         page: 0
     }
 
@@ -72,6 +48,12 @@
         renderProducts(filterProducts(appState.products, value))
     })
 
-    renderProducts(appState.products)
+    const fetchProducts = async () => {
+        const response = await fetch(productsUrl)
+        return response.json()
+    }
 
+    fetchProducts()
+        .then(products => renderProducts(appState.products = products))
+    
 })()
