@@ -12,7 +12,13 @@
         const li = document.createElement('li')
         const figure = document.createElement('figure')
         const img = Object.assign(document.createElement('img'), {
-            src: image
+            src: image,
+            className: 'productImage'
+        })
+        // figure.style.setProperty('--image', `url(${image})`)
+        const duppedImage = Object.assign(document.createElement('img'), {
+            src: image,
+            className: 'duppedImage'
         })
         const figcaption = Object.assign(document.createElement('figcaption'), {
             textContent: name
@@ -25,6 +31,7 @@
             textContent: `$${price}`,
             className: 'price'
         })
+        figure.appendChild(duppedImage)
         figure.appendChild(img)
         figure.appendChild(figcaption)
         li.appendChild(figure)

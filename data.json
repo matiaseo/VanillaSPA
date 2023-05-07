@@ -1,98 +1,98 @@
 [
     {
         "image": "https://dummyimage.com/128x64/aaa/000",
-        "name": "Product 1a",
-        "description": "Product description",
+        "name": "Vestibulum",
+        "description": "Vestibulum et tellus ac dolor tincidunt laoreet",
         "price": 16384
     },
     {
         "image": "https://dummyimage.com/128x64/aa0/000",
-        "name": "Product 1a",
-        "description": "Product description",
+        "name": "Etiam ornare",
+        "description": "Etiam ornare risus in suscipit congue",
         "price": 16384
     },
     {
         "image": "https://dummyimage.com/128x64/a0a/000",
-        "name": "Product 1b",
-        "description": "Product description",
+        "name": "Phasellus commodo",
+        "description": "Phasellus commodo ante eu feugiat aliquet",
         "price": 32768
     },
     {
         "image": "https://dummyimage.com/128x64/a00/000",
-        "name": "Product 2",
-        "description": "Product description",
+        "name": "Fusce bibendum",
+        "description": "Fusce bibendum turpis non sapien efficitur, in lacinia ex mollis",
         "price": 32768
     },
     {
         "image": "https://dummyimage.com/128x64/0aa/000",
-        "name": "Product 3",
-        "description": "Product description",
+        "name": "Aenean feugiat",
+        "description": "Aenean feugiat dui et tristique sollicitudin",
         "price": 65536
     },
     {
         "image": "https://dummyimage.com/128x64/0a0/000",
-        "name": "Product 4",
-        "description": "Product description",
+        "name": "In vel",
+        "description": "In vel justo vitae turpis blandit gravida sit amet vel risus",
         "price": 65536
     },
     {
         "image": "https://dummyimage.com/128x64/00a/000",
-        "name": "Product 4",
-        "description": "Product description",
+        "name": "Praesent nec",
+        "description": "Praesent nec libero eu velit varius sodales sed et arcu",
         "price": 65536
     },
     {
         "image": "https://dummyimage.com/128x64/000/000",
-        "name": "Product 4",
-        "description": "Product description",
+        "name": "Nullam pretium",
+        "description": "Nullam pretium justo ut varius ullamcorper",
         "price": 65536
     },
     {
         "image": "https://dummyimage.com/128x64/aaa/aaa",
-        "name": "Product 1a",
-        "description": "Product description",
+        "name": "Proin tincidunt",
+        "description": "Proin tincidunt arcu et consectetur imperdiet",
         "price": 16384
     },
     {
         "image": "https://dummyimage.com/128x64/aa0/aaa",
-        "name": "Product 1a",
-        "description": "Product description",
+        "name": "Phasellus quis",
+        "description": "Phasellus quis orci quis ligula consequat pellentesque",
         "price": 16384
     },
     {
         "image": "https://dummyimage.com/128x64/a0a/aaa",
-        "name": "Product 1b",
-        "description": "Product description",
+        "name": "Vivamus molestie",
+        "description": "Vivamus molestie massa sit amet magna elementum, eu tincidunt nibh fringilla",
         "price": 32768
     },
     {
         "image": "https://dummyimage.com/128x64/a00/aaa",
-        "name": "Product 2",
-        "description": "Product description",
+        "name": "Donec malesuada",
+        "description": "Donec malesuada nisl eu erat pulvinar elementum",
         "price": 32768
     },
     {
         "image": "https://dummyimage.com/128x64/0aa/aaa",
-        "name": "Product 3",
-        "description": "Product description",
+        "name": "Mauris nec",
+        "description": "Mauris nec dui eu dui viverra consectetur",
         "price": 65536
     },
     {
         "image": "https://dummyimage.com/128x64/0a0/aaa",
-        "name": "Product 4",
-        "description": "Product description",
+        "name": "Sed scelerisque",
+        "description": "Sed scelerisque quam ac efficitur auctor",
         "price": 65536
     },
     {
         "image": "https://dummyimage.com/128x64/00a/aaa",
-        "name": "Product 4",
-        "description": "Product description",
+        "name": "Etiam efficitur",
+        "description": "Etiam efficitur orci vitae odio congue, eget ultricies quam semper",
         "price": 65536
     },
     {
         "image": "https://dummyimage.com/128x64/000/aaa",
-        "name": "Product 4",
-        "description": "Product description",
+        "name": "Aliquam elementum",
+        "description": "Aliquam elementum metus eget convallis dapibus",
         "price": 65536
     }
 ]
