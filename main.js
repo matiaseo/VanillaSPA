@@ -1,12 +1,9 @@
-(async () => {
+;(async () => {
     const productsUrl = 'https://unqctexfi6z2hc4is5sitgbvxy0gmbjz.lambda-url.us-east-2.on.aws/'
     const productsContainer = document.getElementById('productsContainer')
     const productFilter = document.getElementById('productFilter')
     
-    const appState = {
-        products: [],
-        page: 0
-    }
+    let products = []
 
     const toProductCard = ({ name, description, price, image }) => {
         const li = document.createElement('li')
@@ -15,7 +12,6 @@
             src: image,
             className: 'productImage'
         })
-        // figure.style.setProperty('--image', `url(${image})`)
         const duppedImage = Object.assign(document.createElement('img'), {
             src: image,
             className: 'duppedImage'
@@ -43,7 +39,7 @@
     const filterProducts = (products, filterValue) =>
         products.filter(product => product.name.includes(filterValue))
 
-    const renderProducts = (products) => {
+    const renderProducts = products => {
         productsContainer.innerHTML = ''
         products.map(toProductCard)
             .forEach(productCard => {
@@ -52,7 +48,7 @@
     }
 
     productFilter.addEventListener('input', ({ target: { value }}) => {
-        renderProducts(filterProducts(appState.products, value))
+        renderProducts(filterProducts(products, value))
     })
 
     const fetchProducts = async () => {
@@ -60,6 +56,6 @@
         return response.json()
     }
 
-    renderProducts(appState.products = await fetchProducts())
+    renderProducts(products = await fetchProducts())
     
 })()
