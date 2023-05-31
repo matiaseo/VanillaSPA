@@ -49,24 +49,24 @@ figure {
     filter: invert();
 }
 
-#productsContainer {
+.productsContainer {
     display: flex;
     flex-direction: column;
     gap: 32px;
 }
 
-#listLayoutSwitch:checked ~ #productsContainer li {
+#listLayoutSwitch:checked ~ .productsContainer li {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
 }
 
-#listLayoutSwitch:checked ~ #productsContainer .productDescription {
+#listLayoutSwitch:checked ~ .productsContainer .productDescription {
     flex-grow: 1;
     padding: 0 16px;
 }
 
-#gridLayoutSwitch:checked ~ #productsContainer {
+#gridLayoutSwitch:checked ~ .productsContainer {
     grid-template: repeat(4, 1fr) / repeat(2, 1fr);
     display: grid;
 }

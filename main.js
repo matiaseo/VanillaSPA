@@ -1,6 +1,6 @@
 ;(async () => {
     const productsUrl = 'https://unqctexfi6z2hc4is5sitgbvxy0gmbjz.lambda-url.us-east-2.on.aws/'
-    const productsContainer = document.getElementById('productsContainer')
+    const productsContainer = document.querySelector('.productsContainer')
     const productFilter = document.getElementById('productFilter')
     
     let products = []
